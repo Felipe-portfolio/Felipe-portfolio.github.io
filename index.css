@@ -196,6 +196,15 @@ section h3 i {
   font-size: 1.2rem;
 }
 
+/* ---------- Lists ---------- */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
 /* ---------- Cloud Platforms Section ---------- */
 .cloud-platforms {
   text-align: center;
@@ -416,7 +425,7 @@ section h3 i {
 /* ---------- Services Section ---------- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -428,22 +437,46 @@ section h3 i {
   border: 1px solid #30363d;
   transition: var(--transition);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card:hover {
   border-color: var(--accent);
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 216, 255, 0.2);
 }
 
 .service-icon {
   font-size: 2.5rem;
   color: var(--accent);
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 216, 255, 0.1);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: rgba(0, 216, 255, 0.2);
+  transform: scale(1.1);
 }
 
 .service-card h4 {
   color: var(--accent);
   margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 /* ---------- Contact Section ---------- */
@@ -598,6 +631,12 @@ footer {
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -625,8 +664,7 @@ footer {
     grid-template-columns: 1fr;
   }
   
-  .projects-grid,
-  .services-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
   
@@ -637,6 +675,21 @@ footer {
   .cloud-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .service-card {
+    padding: 1.25rem;
+  }
+  
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
   }
 }
 
@@ -682,5 +735,19 @@ footer {
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+  
+  .service-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
   }
 }
