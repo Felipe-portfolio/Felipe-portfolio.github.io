@@ -206,75 +206,66 @@
       font-size: 1.2rem;
     }
 
-    /* ---------- Cloud Platforms Section ---------- */
-    .cloud-platforms {
-      text-align: center;
+    /* ---------- About Section ---------- */
+    #about p {
+      margin-bottom: 1rem;
     }
 
-    .cloud-intro {
-      margin-bottom: 2rem;
-      color: var(--muted);
-    }
-
-    .cloud-grid {
+    /* ---------- Services Section ---------- */
+    .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
     }
 
-    .cloud-card {
+    .service-card {
       background: rgba(22, 27, 34, 0.7);
       border-radius: var(--radius);
-      padding: 2rem 1rem;
+      padding: 1.5rem;
       border: 1px solid #30363d;
       transition: var(--transition);
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
     }
 
-    .cloud-card:hover {
+    .service-card:hover {
       border-color: var(--accent);
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 216, 255, 0.2);
     }
 
-    .cloud-logo {
+    .service-icon {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 80px;
       height: 80px;
-      object-fit: contain;
-      filter: grayscale(0.3);
+      background: rgba(0, 216, 255, 0.1);
+      border-radius: 50%;
       transition: var(--transition);
     }
 
-    .cloud-card:hover .cloud-logo {
-      filter: grayscale(0);
+    .service-card:hover .service-icon {
+      background: rgba(0, 216, 255, 0.2);
       transform: scale(1.1);
     }
 
-    .cloud-card h4 {
+    .service-card h4 {
       color: var(--accent);
-      margin: 0;
+      margin-bottom: 1rem;
       font-size: 1.2rem;
     }
 
-    .cloud-services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      margin-top: 0.5rem;
-    }
-
-    .service-tag {
-      background: rgba(0, 216, 255, 0.1);
-      color: var(--accent);
-      padding: 0.2rem 0.6rem;
-      border-radius: 15px;
-      font-size: 0.75rem;
-      border: 1px solid rgba(0, 216, 255, 0.2);
+    .service-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
     }
 
     /* ---------- Featured Projects ---------- */
@@ -381,116 +372,75 @@
       text-decoration: none;
     }
 
-    /* ---------- Technical Skills ---------- */
-    .skills-grid {
+    /* ---------- Cloud Platforms Section ---------- */
+    .cloud-platforms {
+      text-align: center;
+    }
+
+    .cloud-intro {
+      margin-bottom: 2rem;
+      color: var(--muted);
+    }
+
+    .cloud-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
 
-    .skill-category {
-      animation: fadeInUp 0.8s ease;
-    }
-
-    .skill-category h4 {
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .skill-category ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .skill-category li {
-      padding: 0.3rem 0;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    .cloud-card {
+      background: rgba(22, 27, 34, 0.7);
+      border-radius: var(--radius);
+      padding: 2rem 1rem;
+      border: 1px solid #30363d;
       transition: var(--transition);
-    }
-
-    .skill-category li:hover {
-      transform: translateX(5px);
-    }
-
-    .skill-category li i {
-      color: var(--accent);
-      width: 20px;
-    }
-
-    .tech-icons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .tech-icon {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.5rem;
-      padding: 1rem;
-      background: rgba(22, 27, 34, 0.5);
-      border-radius: var(--radius);
-      border: 1px solid #30363d;
-      transition: var(--transition);
-      width: 100px;
-      text-align: center;
+      gap: 1rem;
     }
 
-    .tech-icon:hover {
-      border-color: var(--accent);
-      transform: translateY(-3px);
-    }
-
-    .tech-icon img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-    }
-
-    .tech-icon span {
-      font-size: 0.8rem;
-      color: var(--text);
-    }
-
-    /* ---------- Services Section ---------- */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .service-card {
-      background: rgba(22, 27, 34, 0.7);
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      border: 1px solid #30363d;
-      transition: var(--transition);
-      text-align: center;
-    }
-
-    .service-card:hover {
+    .cloud-card:hover {
       border-color: var(--accent);
       transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 216, 255, 0.2);
     }
 
-    .service-icon {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin-bottom: 1rem;
+    .cloud-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      filter: grayscale(0.3);
+      transition: var(--transition);
     }
 
-    .service-card h4 {
+    .cloud-card:hover .cloud-logo {
+      filter: grayscale(0);
+      transform: scale(1.1);
+    }
+
+    .cloud-card h4 {
       color: var(--accent);
-      margin-bottom: 1rem;
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .cloud-services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .service-tag {
+      background: rgba(0, 216, 255, 0.1);
+      color: var(--accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 15px;
+      font-size: 0.75rem;
+      border: 1px solid rgba(0, 216, 255, 0.2);
     }
 
     /* ---------- Contact Section ---------- */
@@ -639,7 +589,18 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(-15px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
     /* ---------- Responsive ---------- */
+    @media (max-width: 1200px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 768px) {
       .nav-container {
         flex-direction: column;
@@ -667,18 +628,28 @@
         grid-template-columns: 1fr;
       }
       
-      .projects-grid,
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .skills-grid {
+      .projects-grid {
         grid-template-columns: 1fr;
       }
 
       .cloud-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .service-card {
+        padding: 1.25rem;
+      }
+      
+      .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
       }
     }
 
@@ -713,6 +684,20 @@
         flex-wrap: wrap;
         justify-content: center;
       }
+
+      .service-card {
+        padding: 1rem;
+      }
+      
+      .service-card h4 {
+        font-size: 1.1rem;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
@@ -727,10 +712,9 @@
       </a>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#cloud">Cloud</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
         <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#cloud">Cloud</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -757,6 +741,177 @@
       <h3><i class="fas fa-user"></i> About Me</h3>
       <p>I'm an <strong>Analytics Engineer and Business Consultant</strong> with over 7 years of experience in <strong>data analytics, business intelligence, and cloud migrations</strong>. I help organizations optimize operations, increase profitability, and leverage technology for strategic growth.</p>
       <p><strong>Industries:</strong> eCommerce, Marketing, Healthcare, Finance, Digital Gaming.</p>
+      <p><strong>Core Expertise:</strong> Python, SQL, Power BI, Tableau, Snowflake, AWS, Azure, GCP, REST APIs, Agile methodologies, and team leadership.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h3><i class="fas fa-cogs"></i> Services</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h4>Data Engineering</h4>
+          <p>Design and build scalable data pipelines, ETL processes, and data warehouses to transform raw data into actionable insights.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4>Business Intelligence</h4>
+          <p>Create interactive dashboards and reports that enable data-driven decision making across your organization.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h4>Cloud Migration</h4>
+          <p>Seamlessly migrate your data infrastructure to cloud platforms like AWS, Azure, GCP, or Snowflake.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h4>Process Automation</h4>
+          <p>Automate repetitive data tasks and reporting processes to increase efficiency and reduce manual errors.</p>
+        </div>
+
+        <!-- New Service: REST API Integration -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-plug"></i>
+          </div>
+          <h4>REST API Integration</h4>
+          <p>Connect SaaS platforms and third-party services through robust REST API integrations for seamless data flow and system interoperability.</p>
+        </div>
+
+        <!-- New Service: Team Management & Training -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4>Team Management & Training</h4>
+          <p>Lead and train data teams in Agile methodologies, fostering collaboration and continuous improvement in data practices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects">
+      <h3><i class="fas fa-project-diagram"></i> Featured Projects</h3>
+      <div class="projects-grid">
+        <!-- Zendesk Project -->
+        <div class="project-card">
+          <div class="project-header">
+            <img src="assets/images/zendesk-logo.png" alt="Zendesk" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=ZD'">
+            <div>
+              <h4>Snowflake Medallion Architecture</h4>
+              <p class="company">Zendesk Data Platform</p>
+            </div>
+          </div>
+          <p>Designed and implemented a scalable medallion architecture in Snowflake for Zendesk customer support data, enabling efficient data processing and analytics.</p>
+          <div class="project-value">
+            <h5>Business Impact</h5>
+            <p>Improved data reliability by 40% and reduced query times by 60%, enabling real-time customer insights and support analytics.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Snowflake</span>
+            <span class="tag">Data Architecture</span>
+            <span class="tag">ETL</span>
+            <span class="tag">SQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Felipe-portfolio/Snowflake_medallion" target="_blank">
+              <i class="fab fa-github"></i> View Case Study
+            </a>
+          </div>
+        </div>
+
+        <!-- Decs IO Project -->
+        <div class="project-card">
+          <div class="project-header">
+            <img src="assets/images/decsio-logo.png" alt="Decs IO" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=DI'">
+            <div>
+              <h4>SQL Data Warehouse Solution</h4>
+              <p class="company">Decs IO Gaming Analytics</p>
+            </div>
+          </div>
+          <p>Built a comprehensive SQL data warehouse for digital gaming analytics, processing millions of player events daily with optimized query performance.</p>
+          <div class="project-value">
+            <h5>Business Impact</h5>
+            <p>Enabled real-time player behavior analysis, leading to 25% improvement in user retention strategies and personalized gaming experiences.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Data Warehousing</span>
+            <span class="tag">Python</span>
+            <span class="tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Felipe-portfolio/sql-data-warehouse" target="_blank">
+              <i class="fab fa-github"></i> View Case Study
+            </a>
+          </div>
+        </div>
+
+        <!-- Paperstreet Media Project -->
+        <div class="project-card">
+          <div class="project-header">
+            <img src="assets/images/paperstreet-logo.png" alt="Paperstreet Media" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=PS'">
+            <div>
+              <h4>Marketing Analytics Dashboard</h4>
+              <p class="company">Paperstreet Media</p>
+            </div>
+          </div>
+          <p>Developed comprehensive Power BI dashboards for email marketing performance tracking, integrating multiple data sources for unified analytics.</p>
+          <div class="project-value">
+            <h5>Business Impact</h5>
+            <p>Reduced ESP costs by 90% and improved campaign ROI tracking, enabling data-driven marketing decisions and budget optimization.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">Marketing Analytics</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Felipe-portfolio/Power_Bi_Marketing" target="_blank">
+              <i class="fab fa-github"></i> View Case Study
+            </a>
+          </div>
+        </div>
+
+        <!-- Gilead Project -->
+        <div class="project-card">
+          <div class="project-header">
+            <img src="assets/images/gilead-logo.png" alt="Gilead" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=GL'">
+            <div>
+              <h4>Data Modeling Analysis</h4>
+              <p class="company">Gilead Sciences</p>
+            </div>
+          </div>
+          <p>Conducted comparative analysis of data modeling techniques (Star vs Snowflake schema) for pharmaceutical data optimization and OLAP systems.</p>
+          <div class="project-value">
+            <h5>Business Impact</h5>
+            <p>Optimized data model performance by 35%, reducing reporting latency and enabling faster insights for clinical trial data analysis.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Data Modeling</span>
+            <span class="tag">OLAP</span>
+            <span class="tag">Star Schema</span>
+            <span class="tag">Snowflake Schema</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Felipe-portfolio/star-vs-snowflake-vs-oltp-vs-olap" target="_blank">
+              <i class="fab fa-github"></i> View Case Study
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Cloud Platforms Section -->
@@ -818,220 +973,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Featured Projects Section -->
-    <section id="projects">
-      <h3><i class="fas fa-project-diagram"></i> Featured Projects</h3>
-      <div class="projects-grid">
-        <!-- Zendesk Project -->
-        <div class="project-card">
-          <div class="project-header">
-            <img src="assets/images/zendesk-logo.png" alt="Zendesk" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=ZD'">
-            <div>
-              <h4>Snowflake Medallion Architecture</h4>
-              <p class="company">Zendesk Data Platform</p>
-            </div>
-          </div>
-          <p>: Spearheaded migration of 50TB+ data from Google Cloud Platform to Snowflake and to ensure seamless integration for 7+ stakeholder teams.</p>
-          <div class="project-value">
-            <h5>Business Impact</h5>
-            <p> Enforced data sensitivity classifications and metadata logging, achieving 100% compliance with GDPR and internal policies. </p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Snowflake</span>
-            <span class="tag">Data Architecture</span>
-            <span class="tag">ETL</span>
-            <span class="tag">SQL</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Felipe-portfolio/Snowflake_medallion" target="_blank">
-              <i class="fab fa-github"></i> View Case Study
-            </a>
-          </div>
-        </div>
-
-        <!-- Decs IO Project -->
-        <div class="project-card">
-          <div class="project-header">
-            <img src="assets/images/decsio-logo.png" alt="Decs IO" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=DI'">
-            <div>
-              <h4>SQL Data Warehouse Solution</h4>
-              <p class="company">Decs IO Gaming Analytics</p>
-            </div>
-          </div>
-          <p>Enhanced the fraud detection system, improving prevention accuracy to 98%, and built a comprehensive SQL data warehouse for digital gaming analytics, capable of processing millions of player events daily with optimized query performance.</p>
-          <div class="project-value">
-            <h5>Business Impact</h5>
-            <p>Enabled real-time player behavior analysis, contributing to a 25% improvement in user retention strategies and more personalized gaming experiences.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">SQL</span>
-            <span class="tag">Data Warehousing</span>
-            <span class="tag">Python</span>
-            <span class="tag">REST API</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Felipe-portfolio/sql-data-warehouse" target="_blank">
-              <i class="fab fa-github"></i> View Case Study
-            </a>
-          </div>
-        </div>
-
-        <!-- Paperstreet Media Project -->
-        <div class="project-card">
-          <div class="project-header">
-            <img src="assets/images/paperstreet-logo.png" alt="Paperstreet Media" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=PS'">
-            <div>
-              <h4>Marketing Analytics Dashboard</h4>
-              <p class="company">Paperstreet Media</p>
-            </div>
-          </div>
-          <p>Developed comprehensive Power BI dashboards for email marketing performance tracking, integrating multiple data sources for unified analytics.</p>
-          <div class="project-value">
-            <h5>Business Impact</h5>
-            <p>Reduced ESP costs by 90% and improved campaign ROI tracking, enabling data-driven marketing decisions and budget optimization.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Power BI</span>
-            <span class="tag">Marketing Analytics</span>
-            <span class="tag">DAX</span>
-            <span class="tag">Data Visualization</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Felipe-portfolio/Power_Bi_Marketing" target="_blank">
-              <i class="fab fa-github"></i> View Case Study
-            </a>
-          </div>
-        </div>
-
-        <!-- Gilead Project -->
-        <div class="project-card">
-          <div class="project-header">
-            <img src="assets/images/gilead-logo.png" alt="Gilead" class="company-logo" onerror="this.src='https://via.placeholder.com/50x50/161b22/00d8ff?text=GL'">
-            <div>
-              <h4>Data Modeling Analysis</h4>
-              <p class="company">Gilead Sciences</p>
-            </div>
-          </div>
-          <p>Conducted comparative analysis of data modeling techniques (Star vs Snowflake schema) for customer support data optimization in ThoughtSpot, enhancing OLAP system efficiency and query performance.</p>
-          <div class="project-value">
-            <h5>Business Impact</h5>
-            <p>Optimized data model performance by 35%, reducing reporting latency and enabling faster insights for clinical trial data analysis.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Data Modeling</span>
-            <span class="tag">OLAP</span>
-            <span class="tag">Star Schema</span>
-            <span class="tag">Snowflake Schema</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Felipe-portfolio/star-vs-snowflake-vs-oltp-vs-olap" target="_blank">
-              <i class="fab fa-github"></i> View Case Study
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technical Skills Section -->
-    <section id="skills">
-      <h3><i class="fas fa-code"></i> Technical Skills</h3>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h4><i class="fas fa-laptop-code"></i> Programming Languages</h4>
-          <ul>
-            <li><i class="fas fa-check"></i> Python (Pandas, NumPy)</li>
-            <li><i class="fas fa-check"></i> SQL</li>
-            <li><i class="fas fa-check"></i> DAX</li>
-          </ul>
-        </div>
-        
-        <div class="skill-category">
-          <h4><i class="fas fa-database"></i> Databases & Big Data</h4>
-          <ul>
-            <li><i class="fas fa-check"></i> PostgreSQL, MySQL, SQL Server</li>
-            <li><i class="fas fa-check"></i> Dremio, OracleDB</li>
-            <li><i class="fas fa-check"></i> Apache Spark, Kafka</li>
-            <li><i class="fas fa-check"></i> Databricks, DBT</li>
-          </ul>
-        </div>
-        
-        <div class="skill-category">
-          <h4><i class="fas fa-chart-bar"></i> Visualization & Tools</h4>
-          <ul>
-            <li><i class="fas fa-check"></i> Power BI, Tableau, Looker</li>
-            <li><i class="fas fa-check"></i> Quicksight, Qlik View</li>
-            <li><i class="fas fa-check"></i> Airflow, Luigi, Git</li>
-            <li><i class="fas fa-check"></i> Power Automate</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h4><i class="fas fa-cogs"></i> Workflow & Collaboration</h4>
-          <ul>
-            <li><i class="fas fa-check"></i> Jira, Confluence, Slack</li>
-            <li><i class="fas fa-check"></i> ClickUp, Agile Methodologies</li>
-            <li><i class="fas fa-check"></i> Windows, Ubuntu, MacOS</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-<section id="services">
-  <h3><i class="fas fa-cogs"></i> Services</h3>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-database"></i>
-      </div>
-      <h4>Data Engineering</h4>
-      <p>Design and build scalable data pipelines, ETL processes, and data warehouses to transform raw data into actionable insights.</p>
-    </div>
-    
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <h4>Business Intelligence</h4>
-      <p>Create interactive dashboards and reports that enable data-driven decision making across your organization.</p>
-    </div>
-    
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-cloud-upload-alt"></i>
-      </div>
-      <h4>Cloud Migration</h4>
-      <p>Seamlessly migrate your data infrastructure to cloud platforms like AWS, Azure, GCP, or Snowflake.</p>
-    </div>
-    
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-robot"></i>
-      </div>
-      <h4>Process Automation</h4>
-      <p>Automate repetitive data tasks and reporting processes to increase efficiency and reduce manual errors.</p>
-    </div>
-
-    <!-- New Service: REST API Integration -->
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-plug"></i>
-      </div>
-      <h4>REST API Integration</h4>
-      <p>Connect SaaS platforms and third-party services through robust REST API integrations for seamless data flow and system interoperability.</p>
-    </div>
-
-    <!-- New Service: Team Management & Training -->
-    <div class="service-card">
-      <div class="service-icon">
-        <i class="fas fa-users"></i>
-      </div>
-      <h4>Team Management & Training</h4>
-      <p>Lead and train data teams in Agile methodologies, fostering collaboration and continuous improvement in data practices.</p>
-    </div>
-  </div>
-</section>
 
     <!-- Contact Section -->
     <section id="contact">
