@@ -1,0 +1,156 @@
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --accent: #00d8ff;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --link: #58a6ff;
+  --radius: 12px;
+  --shadow: rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  border-bottom: 1px solid #30363d;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* ---------- Sections ---------- */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: var(--card);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+section h3 {
+  color: var(--accent);
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.3rem;
+}
+
+/* ---------- Lists ---------- */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ---------- Contact Section ---------- */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-links a {
+  background: var(--bg);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #30363d;
+  transition: all 0.2s ease;
+}
+
+.contact-links a:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* ---------- Quote & Footer ---------- */
+.quote {
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--muted);
+  animation: fadeIn 2s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  border-top: 1px solid #30363d;
+  font-size: 0.9rem;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+}
